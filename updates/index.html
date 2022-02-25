@@ -33,7 +33,7 @@
         <div class="card">
           <h5 class="card-header">Week 1</h5>
           <div class="card-body">
-            <p class="card-text">I bought the parts. My main goal is to interface with the temperature sensor and test it out on a water bath. I will also try bluetooth module and working with the relay.</p>
+            <p class="card-text">Bluetooth is functional, but messages are not received reliably from the phone end. The SHT20 temperature sensor shuts off after getting too hot (45~50 degrees Celsius). I tried the more popular DS18B20 sensor and that seems to work fine; however, this uses the 1-Wire protocol. Apparently, it is possible to use UART to implement this protocol. Some alternate solution I am considering is I2C infrared sensor GY-906 or getting a 1-Wire to I2C or 1-Wire to UART bridge. I can also try to interface with the 1-Wire sensor directly using UART, but this takes more time to get working.</p>
           </div>
         </div>
       </main>
