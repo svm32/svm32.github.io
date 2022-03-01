@@ -31,9 +31,21 @@
     <div class="col-lg-8 mx-auto p-3 py-md-5">
       <main>
         <div class="card">
+          <h5 class="card-header">Current Progress</h5>
+          <div class="card-body">
+            <p class="card-text">You can check out the current progress in the code at <a href="https://github.com/TranNicholas/svm32">TranNicholas/svm32</a></p>
+          </div>
+        </div>
+        <div class="card">
           <h5 class="card-header">Week 1</h5>
           <div class="card-body">
             <p class="card-text">Bluetooth is functional, but messages are not received reliably from the phone end. The SHT20 temperature sensor shuts off after getting too hot (45~50 degrees Celsius). I tried the more popular DS18B20 sensor with Arduino which seems to work fine even into 180 degrees F (more than enough for most sous vide); however, this uses the 1-Wire protocol. For alternatives, I am considering the I2C infrared sensor GY-906 or getting a 1-Wire to I2C or 1-Wire to UART bridge. It seems to also be possible to implement 1-Wire using UART, but this takes more time to get working.</p>
+          </div>
+        </div>
+        <div class="card">
+          <h5 class="card-header">Week 2</h5>
+          <div class="card-body">
+            <p class="card-text">I implemented 1-Wire over UART and can communicate with the DS18B20 sensor.</p>
           </div>
         </div>
       </main>
