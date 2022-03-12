@@ -45,7 +45,13 @@
         <div class="card">
           <h5 class="card-header">Week 2</h5>
           <div class="card-body">
-            <p class="card-text">I implemented 1-Wire over UART and can communicate with the DS18B20 sensor. I tested a BluetoothLE module and it works very reliably for communication with my phone. The project now uses UART interrupt for communication and has all the basic features except temperature control logic and status display.</p>
+            <p class="card-text">I implemented 1-Wire over UART using <a href="https://gitlab.polytech.umontpellier.fr/gauthier.chabrolin/nucleo-64_l476_ds18b20">code from a French University</a> and can communicate with the DS18B20 sensor. I tested a BluetoothLE module and it works very reliably for communication with my phone. The project now uses UART interrupt for communication and has all the basic features except temperature control logic and status display.</p>
+          </div>
+        </div>
+        <div class="card">
+          <h5 class="card-header">Week 3</h5>
+          <div class="card-body">
+            <p class="card-text">I still don't have the I2C display quite working, but I tested it using Arduino and also STM32 Nucleo with <a href="https://community.st.com/s/question/0D50X00009sUBHFSA4/enpresentationstm32i2clcdhd44780v2">code from a French University</a>. I just need to translate the HAL code to register level code like I did for the temperature sensor. Then I need to finish implementing the PID controller and calibrating it.</p>
           </div>
         </div>
       </main>
